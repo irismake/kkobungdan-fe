@@ -1,6 +1,7 @@
 import type { FormEvent } from 'react'
 import { useEffect, useRef, useState } from 'react'
 import { Navigate, useLocation, useNavigate } from 'react-router-dom'
+import logoUrl from '../../assets/kkobungdan-logo.png'
 import type { SignInFailureReason } from '../../auth/adminSessionContext'
 import { useAdminSession } from '../../auth/adminSessionContext'
 import { readRedirectTarget } from '../../auth/redirectTarget'
@@ -88,7 +89,16 @@ export function LoginPage() {
     <div className="or-auth">
       <form className="or-auth-card" onSubmit={handleSubmit}>
         <div className="or-auth-head">
-          <span className="or-auth-brand">꼬붕단 운영 관리</span>
+          <span className="or-auth-brand">
+            <img
+              className="or-auth-logo"
+              src={logoUrl}
+              alt="꼬붕단"
+              width={77}
+              height={28}
+            />{' '}
+            운영 관리
+          </span>
           <h1 className="or-auth-title">관리자 로그인</h1>
         </div>
 

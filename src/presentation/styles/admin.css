@@ -43,17 +43,10 @@ body {
   letter-spacing: -0.01em;
 }
 
-.or-brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
+.or-brand-logo {
+  display: block;
+  width: auto;
   height: 24px;
-  border-radius: 6px;
-  background: var(--or-primary);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
 }
 
 .or-nav {
@@ -958,9 +951,18 @@ body {
 }
 
 .or-auth-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--or-space-2);
   color: var(--or-primary);
   font-size: 12px;
   font-weight: 700;
+}
+
+.or-auth-logo {
+  display: block;
+  width: auto;
+  height: 28px;
 }
 
 .or-auth-title {
