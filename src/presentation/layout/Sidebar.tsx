@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import logoUrl from '../assets/kkobungdan-logo.png'
 import { isMockEnabled } from '../mock/mockMode'
 import { NAV_ITEMS } from './navItems'
 
@@ -6,10 +7,14 @@ export function Sidebar() {
   return (
     <aside className="or-sidebar">
       <div className="or-brand">
-        <span className="or-brand-mark" aria-hidden="true">
-          꼬
-        </span>
-        꼬붕단 Admin
+        <img
+          className="or-brand-logo"
+          src={logoUrl}
+          alt="꼬붕단"
+          width={66}
+          height={24}
+        />{' '}
+        Admin
       </div>
       <nav className="or-nav" aria-label="주요 메뉴">
         <span className="or-nav-label">운영</span>
